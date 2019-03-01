@@ -1,7 +1,13 @@
 'use strict';
 
 function find_last_even(collection) {
-  //在这里写入代码
+  let res = -1;
+  collection.forEach((val)=>{
+    if( val % 2 === 0){
+      res = val;
+    }
+  })
+  return res;
 }
 
 module.exports = find_last_even;

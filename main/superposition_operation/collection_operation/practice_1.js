@@ -2,7 +2,7 @@
 
 function hybrid_operation(collection) {
 
-  //在这里写入代码
+  return collection.map(val=>(val*3+2)).reduce((tmp,val)=>tmp+val);
 }
 
 module.exports = hybrid_operation;

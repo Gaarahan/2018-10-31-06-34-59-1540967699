@@ -2,7 +2,8 @@
 
 function average_uneven(collection) {
 
-  //在这里写入代码
+  let tmp =collection.filter(val=>val%2!== 0);
+  return tmp.reduce((a,b)=>a+b)/tmp.length;
 }
 
 module.exports = average_uneven;
