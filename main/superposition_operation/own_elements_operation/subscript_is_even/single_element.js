@@ -1,9 +1,8 @@
 'use strict';
 var single_element = function(collection){
-  return collection
-    .filter((val,index)=>(index+1)%2===0)
-    .filter((val,index)=>{
-    return collection.indexOf(val) === collection.lastIndexOf(val);
-  })
+  let arr = collection.filter((val,index)=>index%2!==0);
+    return arr.filter((val,index)=>{
+      return arr.indexOf(val) === arr.lastIndexOf(val);
+    })
 };
 module.exports = single_element;
